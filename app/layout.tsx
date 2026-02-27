@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Vikash Kumar | Full Stack Developer",
     description:
       "Portfolio of Vikash Kumar — Full Stack Developer building scalable and secure web applications.",
-    url: "https://yourdomain.com", // change after deployment
+    url: "https://vikash-portfolio-nine.vercel.app/", 
     siteName: "Vikash Portfolio",
     images: [
       {

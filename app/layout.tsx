@@ -2,11 +2,10 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
 
-
 export const metadata: Metadata = {
-  title: "Vikash Kumar | Full Stack Developer",
+  title: "Vikash Kumar | Full Stack Developer (MERN) | Software Engineer",
   description:
-    "Vikash Kumar is a Full Stack Developer specializing in MERN stack, API integration, scalable web applications, and secure backend systems.",
+    "Vikash Kumar is a Full Stack Developer (MERN) and Software Engineer specializing in backend automation systems, Node.js, MongoDB, API integration, and scalable web applications.",
   keywords: [
     "Vikash Kumar",
     "Full Stack Developer",
@@ -14,20 +13,23 @@ export const metadata: Metadata = {
     "React Developer",
     "Node.js Developer",
     "MongoDB",
+    "Software Engineer",
     "Web Developer India",
-    "Software Developer Portfolio"
+    "Backend Automation",
+    "Portfolio"
   ],
   authors: [{ name: "Vikash Kumar" }],
   creator: "Vikash Kumar",
   openGraph: {
-    title: "Vikash Kumar | Full Stack Developer",
+    title:
+      "Vikash Kumar | Full Stack Developer (MERN) | Software Engineer",
     description:
-      "Portfolio of Vikash Kumar — Full Stack Developer building scalable and secure web applications.",
-    url: "https://vikash-portfolio-nine.vercel.app/", 
-    siteName: "Vikash Portfolio",
+      "Portfolio of Vikash Kumar — Full Stack Developer building scalable backend systems and automation architecture.",
+    url: "https://vikash-kumar-fullstack.vercel.app/",
+    siteName: "Vikash Kumar Portfolio",
     images: [
       {
-        url: "/projects/DesiDealz.png",
+        url: "https://vikash-kumar-fullstack.vercel.app/projects/DesiDealz.png",
         width: 1200,
         height: 630,
         alt: "Vikash Kumar Portfolio"
@@ -38,10 +40,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vikash Kumar | Full Stack Developer",
+    title: "Vikash Kumar | Full Stack Developer (MERN)",
     description:
-      "Portfolio of Vikash Kumar — MERN Stack Developer.",
-    images: ["/projects/DesiDealz.png"]
+      "Portfolio of Vikash Kumar — MERN Stack Developer building scalable web applications.",
+    images: [
+      "https://vikash-kumar-fullstack.vercel.app/projects/DesiDealz.png"
+    ]
   }
 };
 
@@ -54,6 +58,26 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="theme-color" content="#0f172a" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Vikash Kumar",
+              url: "https://vikash-kumar-fullstack.vercel.app/",
+              sameAs: [
+                "https://www.linkedin.com/in/vikash-kumar-fullstack/",
+                "https://github.com/vikash-kumar-fullstack"
+              ],
+              jobTitle: "Full Stack Developer",
+              worksFor: {
+                "@type": "Organization",
+                name: "RoadX Motors"
+              }
+            })
+          }}
+        />
       </head>
       <body className="bg-[#0f172a] text-white antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
@@ -64,4 +88,3 @@ export default function RootLayout({
     </html>
   );
 }
-

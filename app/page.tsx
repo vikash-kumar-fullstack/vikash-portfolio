@@ -776,7 +776,7 @@ const [showAll, setShowAll] = useState(false);
       </a>
 
       <a
-        href="https://github.com/Vikash-Kumar-54321"
+        href="https://github.com/Vikash-Kumar-fullstack"
         target="_blank"
         className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition font-medium"
       >
@@ -784,7 +784,7 @@ const [showAll, setShowAll] = useState(false);
       </a>
 
       <a
-        href="https://www.linkedin.com/in/vikash-kumar-b53055309"
+        href="www.linkedin.com/in/vikash-kumar-fullstack"
         target="_blank"
         className="px-6 py-3 rounded-xl border border-white/20 hover:bg-white/10 transition font-medium"
       >

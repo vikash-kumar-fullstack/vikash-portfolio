@@ -638,7 +638,7 @@ const [showAll, setShowAll] = useState(false);
 
         <div className="mt-8 flex gap-4">
           <a
-            href="#"
+            href="https://github.com/vikash-kumar-fullstack/desiDealz"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition"
@@ -647,7 +647,7 @@ const [showAll, setShowAll] = useState(false);
           </a>
 
           <a
-            href="#"
+            href="https://desidealz.onrender.com/product"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition"

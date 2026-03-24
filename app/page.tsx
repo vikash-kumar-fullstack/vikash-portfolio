@@ -65,21 +65,21 @@ const projects = [
     live: "#"
   },
   {
-    title: "Automation System",
-    description:
-      "Lead automation system integrating IndiaMART API and WhatsApp Cloud API with chatbot and scheduler.",
-    tech: ["Node.js", "MongoDB", "API Integration"],
-    image:"/projects/automation.jpeg",
-    github: "#",
-    live: "#"
-  },
-  {
     title: "Digital Grievance System",
     description:
       "Online complaint management system with admin dashboard and real-time status tracking.",
     tech: ["React", "Node.js", "MongoDB"],
     image: "/projects/grievance.jpeg",
     github: "https://github.com/vikash-kumar-fullstack/DigitalGrievanceSystem",
+    live: "https://digitalgrievancesystem.onrender.com"
+  },
+  {
+    title: "Automation System",
+    description:
+      "Lead automation system integrating IndiaMART API and WhatsApp Cloud API with chatbot and scheduler.",
+    tech: ["Node.js", "MongoDB", "API Integration"],
+    image:"/projects/automation.jpeg",
+    github: "#",
     live: "#"
   },
   {

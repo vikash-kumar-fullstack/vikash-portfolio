@@ -1,4 +1,18 @@
-module.exports={
-    siteUrl:"https://vercel.com/vikash-kumar-54321s-projects/vikash-kumar-fullstack",
-    generateRobotsTxt:true,
+/** @type {import('next-sitemap').IConfig} */
+module.exports = {
+  siteUrl: "https://vikash-kumar-fullstack.vercel.app",
+  generateRobotsTxt: true,
+  sitemapSize: 7000,
+
+  changefreq: "daily",
+  priority: 0.7,
+
+  robotsTxtOptions: {
+    policies: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+    ],
+  },
 };

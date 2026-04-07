@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://vercel.com/vikash-kumar-54321s-projects/vikash-kumar-fullstack
+Host: https://vikash-kumar-fullstack.vercel.app
 
 # Sitemaps
-Sitemap: https://vercel.com/vikash-kumar-54321s-projects/vikash-kumar-fullstack/sitemap.xml
+Sitemap: https://vikash-kumar-fullstack.vercel.app/sitemap.xml

@@ -232,7 +232,7 @@ const [showAll, setShowAll] = useState(false);
     <div className="relative w-72 h-72 md:w-96 md:h-96">
   <Image
     src="/profile.jpeg"
-    alt="Vikash Kumar"
+    alt="Vikash Kumar Full Stack Developer"
     fill
     priority
     sizes="(max-width: 768px) 288px, 384px"
@@ -602,7 +602,7 @@ const [showAll, setShowAll] = useState(false);
       <div className="relative w-full h-52 overflow-hidden">
   <Image
     src="/projects/DesiDealz.jpeg"
-    alt="DesiDealz - E Commerce Platform"
+    alt="DesiDealz MERN E Commerce Project"
     fill
     sizes="(max-width: 768px) 100vw, 33vw"
     className="object-cover group-hover:scale-105 transition duration-500"

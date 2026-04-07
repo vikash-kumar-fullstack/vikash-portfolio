@@ -5,10 +5,18 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Vikash Kumar | Full Stack Developer (MERN) | Software Engineer",
+  metadataBase: new URL("https://vikash-kumar-fullstack.vercel.app"),
   description:
     "Vikash Kumar is a Full Stack Developer (MERN) and Software Engineer specializing in backend automation systems, Node.js, MongoDB, API integration, and scalable web applications.",
   keywords: [
     "Vikash Kumar",
+    "Vikash Kumar NIT Mizoram",
+    "Vikash Kumar NIT MZ",
+    "Vikash Kumar Full Stack Developer",
+    "Vikash Kumar MERN Developer",
+    "Vikash Kumar Portfolio",
+    "NIT Mizoram Developer",
+    "Vikash Kumar Software Engineer",
     "Vikash Kumar Nit Mizoram",
     "Full Stack Developer",
     "MERN Developer",
@@ -18,7 +26,7 @@ export const metadata: Metadata = {
     "Software Engineer",
     "Web Developer India",
     "Backend Automation",
-    "Portfolio"
+    "Portfolio",
   ],
   verification:{
     google:"uLwyyI9NjAEdN4EUEfzNVhI7N4AAQaAk6yiOcVXPgM4",
@@ -67,23 +75,37 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Vikash Kumar",
-              url: "https://vikash-kumar-fullstack.vercel.app/",
-              sameAs: [
-                "https://www.linkedin.com/in/vikash-kumar-fullstack/",
-                "https://github.com/vikash-kumar-fullstack"
-              ],
-              jobTitle: "Full Stack Developer",
-              worksFor: {
-                "@type": "Organization",
-                name: "RoadX Motors"
-              }
-            })
+          __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Vikash Kumar",
+          "url": "https://vikash-kumar-fullstack.vercel.app",
+          "image": "https://vikash-kumar-fullstack.vercel.app/profile.jpeg",
+          "jobTitle": "Full Stack Developer",
+          "worksFor": {
+          "@type": "Organization",
+          "name": "RoadX Motors Pvt Ltd"
+          },
+          "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "National Institute of Technology Mizoram"
+          },
+          "sameAs": [
+          "https://github.com/Vikash-Kumar-fullstack",
+          "https://www.linkedin.com/in/vikash-kumar-fullstack"
+          ],
+          "knowsAbout": [
+          "Full Stack Development",
+          "MERN Stack",
+          "Node.js",
+          "MongoDB",
+          "System Design",
+          "API Integration",
+          "Automation Systems"
+          ]
+          })
           }}
-        />
+          />
       </head>
       <body className="bg-[#0f172a] text-white antialiased">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>

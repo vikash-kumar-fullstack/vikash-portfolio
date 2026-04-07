@@ -1,3 +1,4 @@
+// @ts-ignore
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
@@ -18,6 +19,9 @@ export const metadata: Metadata = {
     "Backend Automation",
     "Portfolio"
   ],
+  verification:{
+    google:"uLwyyI9NjAEdN4EUEfzNVhI7N4AAQaAk6yiOcVXPgM4",
+  },
   authors: [{ name: "Vikash Kumar" }],
   creator: "Vikash Kumar",
   openGraph: {

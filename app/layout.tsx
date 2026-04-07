@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     "Vikash Kumar is a Full Stack Developer (MERN) and Software Engineer specializing in backend automation systems, Node.js, MongoDB, API integration, and scalable web applications.",
   keywords: [
     "Vikash Kumar",
+    "Vikash Kumar Nit Mizoram",
     "Full Stack Developer",
     "MERN Developer",
     "React Developer",

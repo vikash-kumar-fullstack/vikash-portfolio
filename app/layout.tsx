@@ -73,59 +73,93 @@ export default function RootLayout({
         <meta name="theme-color" content="#0f172a" />
         <meta name="google-site-verification" content="Vm-X9UjVg8pQVaw8vWDRusPq7CUQD_W0mQDl4v-shyo" />
         
-        {/* Enhanced JSON-LD Schema for Rich Results */}
+        {/* Person Schema for Knowledge Panel */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Vikash Kumar",
-          "alternateName": ["Vikash Kumar NIT Mizoram", "Vikash Kumar Full Stack Developer", "Vikash Kumar NIT MZ"],
-          "url": "https://vikash-kumar-fullstack.vercel.app",
-          "image": "https://vikash-kumar-fullstack.vercel.app/profile.jpeg",
-          "description": "Full Stack Developer (MERN) and Software Engineer specializing in backend automation systems, Node.js, MongoDB, API integration, and scalable web applications.",
-          "jobTitle": "Full Stack Developer",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "RoadX Motors Pvt Ltd"
-          },
-          "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "National Institute of Technology Mizoram",
-            "url": "https://www.nitmz.ac.in"
-          },
-          "sameAs": [
-            "https://github.com/Vikash-Kumar-fullstack",
-            "https://www.linkedin.com/in/vikash-kumar-fullstack"
-          ],
-          "knowsAbout": [
-            "Full Stack Development",
-            "MERN Stack",
-            "Node.js",
-            "MongoDB",
-            "React.js",
-            "Express.js",
-            "System Design",
-            "API Integration",
-            "Automation Systems",
-            "Blockchain Fundamentals"
-          ],
-          "skills": [
-            "JavaScript",
-            "TypeScript",
-            "React",
-            "Node.js",
-            "MongoDB",
-            "Express",
-            "Python",
-            "Java",
-            "Tailwind CSS",
-            "Git",
-            "REST APIs",
-            "System Integration"
-          ]
-          })
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Vikash Kumar",
+              "alternateName": ["Vikash Kumar NIT Mizoram", "Vikash Kumar Full Stack Developer", "Vikash Kumar NIT MZ"],
+              "url": "https://vikash-kumar-fullstack.vercel.app",
+              "image": {
+                "@type": "ImageObject",
+                "url": "https://vikash-kumar-fullstack.vercel.app/profile.jpeg",
+                "width": 800,
+                "height": 800
+              },
+              "description": "Full Stack Developer (MERN) and Software Engineer specializing in backend automation systems, Node.js, MongoDB, API integration, and scalable web applications.",
+              "jobTitle": "Full Stack Developer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "RoadX Motors Pvt Ltd"
+              },
+              "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "National Institute of Technology Mizoram",
+                "url": "https://www.nitmz.ac.in"
+              },
+              "sameAs": [
+                "https://github.com/Vikash-Kumar-fullstack",
+                "https://www.linkedin.com/in/vikash-kumar-fullstack"
+              ],
+              "knowsAbout": [
+                "Full Stack Development",
+                "MERN Stack",
+                "Node.js",
+                "MongoDB",
+                "React.js",
+                "Express.js",
+                "System Design",
+                "API Integration",
+                "Automation Systems",
+                "Blockchain Fundamentals"
+              ],
+              "skills": [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Node.js",
+                "MongoDB",
+                "Express",
+                "Python",
+                "Java",
+                "Tailwind CSS",
+                "Git",
+                "REST APIs",
+                "System Integration"
+              ],
+              "mainEntityOfPage": {
+                "@type": "ProfilePage",
+                "@id": "https://vikash-kumar-fullstack.vercel.app/#profile"
+              }
+            })
+          }}
+        />
+
+        {/* Breadcrumb Schema for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://vikash-kumar-fullstack.vercel.app/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Vikash Kumar Portfolio",
+                  "item": "https://vikash-kumar-fullstack.vercel.app/"
+                }
+              ]
+            })
           }}
         />
       </head>

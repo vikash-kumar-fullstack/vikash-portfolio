@@ -139,7 +139,8 @@ export default function ProjectsPage() {
                     src="/projects/DesiDealz.jpeg"
                     alt="DesiDealz"
                     fill
-                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover group-hover:scale-105 transition duration-500"
                   />
                 </div>
                 <div className="p-8 md:p-10">
@@ -189,6 +190,7 @@ export default function ProjectsPage() {
                       src={project.image}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 768px) 320px, 384px"
                       className="object-cover group-hover:scale-105 transition duration-500"
                     />
                   </div>

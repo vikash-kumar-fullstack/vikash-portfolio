@@ -5,9 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/api/", "/_next/"],
     },
     sitemap: "https://vikash-kumar-fullstack.vercel.app/sitemap.xml",
   };
 }
-
-

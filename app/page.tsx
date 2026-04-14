@@ -100,6 +100,7 @@ export default function Home() {
                     sizes="(max-width: 768px) 288px, 384px"
                     className="rounded-full object-cover"
                   />
+                  
                 </div>
               </div>
             </motion.div>

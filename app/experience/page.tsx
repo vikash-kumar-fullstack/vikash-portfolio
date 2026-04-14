@@ -97,13 +97,15 @@ export default function ExperiencePage() {
                     <div>
                       <h3 className="text-2xl md:text-3xl font-bold">{exp.role}</h3>
                       <div className="flex items-center gap-3 mt-2">
-                        <Image
-                          src={exp.logo}
-                          alt={exp.company}
-                          width={40}
-                          height={40}
-                          className="rounded-md"
-                        />
+                        <div className="relative w-10 h-10">
+                            <Image 
+                                src={exp.logo} 
+                                alt={exp.company} 
+                                fill
+                                sizes="40px"
+                                className="rounded-md object-cover" 
+                            />
+                            </div>
                         <p className={`text-${exp.color}-400 text-lg`}>{exp.company}</p>
                       </div>
                     </div>

@@ -52,6 +52,7 @@ export default function AboutPage() {
                     src="/profile.jpeg"
                     alt="Vikash Kumar"
                     fill
+                    sizes="(max-width: 768px) 320px, 384px"
                     className="object-cover"
                   />
                 </div>

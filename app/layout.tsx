@@ -72,6 +72,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#0f172a" />
         <meta name="google-site-verification" content="Vm-X9UjVg8pQVaw8vWDRusPq7CUQD_W0mQDl4v-shyo" />
+        <link rel="me" href="https://www.wikidata.org/wiki/Q139374047" type="text/html" />
         
         {/* Person Schema for Knowledge Panel */}
         <script
@@ -101,9 +102,10 @@ export default function RootLayout({
                 "url": "https://www.nitmz.ac.in"
               },
               "sameAs": [
-                "https://github.com/Vikash-Kumar-fullstack",
-                "https://www.linkedin.com/in/vikash-kumar-fullstack"
-              ],
+                  "https://github.com/Vikash-Kumar-fullstack",
+                  "https://www.linkedin.com/in/vikash-kumar-fullstack",
+                  "https://www.wikidata.org/wiki/Q139374047"
+                ],
               "knowsAbout": [
                 "Full Stack Development",
                 "MERN Stack",

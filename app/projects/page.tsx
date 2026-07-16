@@ -3,6 +3,7 @@
 import Navbar from "@/Components/Navbar";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import MedHospiCarousel from "@/Components/MedHospiCarousel";
 import ScrollToTop from "@/Components/ScrollToTop";
 import { useState } from "react";
 
@@ -12,6 +13,26 @@ export default function ProjectsPage() {
 
   const projects = [
     {
+      title: "Smart Healthcare Access System",
+      description:
+        "Enterprise-grade healthcare platform enabling intelligent hospital discovery, appointment booking, QR-based check-ins, real-time queue management, EMR workflows, and multi-role healthcare operations.",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.IO",
+        "JWT",
+        "Google OAuth",
+        "Cloudinary"
+      ],
+      image: "/projects/medhospi.jpeg",
+      github:
+        "https://github.com/vikash-kumar-fullstack/smart-healthcare-access-system",
+      live: "https://smart-healthcare-access-system.vercel.app",
+      featured: true
+    },
+    {
       title: "DesiDealz - E Commerce Platform",
       description:
         "Full-stack MERN e-commerce platform with authentication, cart system, and secure payment integration.",
@@ -19,7 +40,6 @@ export default function ProjectsPage() {
       image: "/projects/DesiDealz.jpeg",
       github: "https://github.com/vikash-kumar-fullstack/desiDealz",
       live: "https://desidealz.onrender.com/product",
-      featured: true
     },
     {
       title: "Teach With Teach",
@@ -134,34 +154,50 @@ export default function ProjectsPage() {
               viewport={{ once: true }}
             >
               <div className="grid md:grid-cols-2 gap-10 items-center bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl overflow-hidden hover:scale-[1.02] hover:border-blue-500/40 transition-all duration-300">
-                <div className="relative w-full h-64 md:h-full min-h-75">
-                  <Image
-                    src="/projects/DesiDealz.jpeg"
-                    alt="DesiDealz"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-105 transition duration-500"
-                  />
+                <div className="relative w-full h-64 md:h-full min-h-125">
+                  <MedHospiCarousel />
                 </div>
                 <div className="p-8 md:p-10">
                   <p className="text-sm uppercase tracking-wider text-blue-400">Featured Project</p>
-                  <h3 className="mt-4 text-2xl md:text-3xl font-bold">DesiDealz - E Commerce Platform</h3>
+                  <h3 className="mt-4 text-2xl md:text-3xl font-bold">
+                    Smart Healthcare Access System
+                  </h3>
                   <p className="mt-6 text-gray-400 leading-relaxed">
-                    A full-stack MERN e-commerce platform featuring secure authentication,
-                    cart management, Razorpay integration, and scalable backend architecture.
+                    A production-grade healthcare platform supporting intelligent hospital
+                    discovery, symptom-based search, appointment booking, QR check-ins,
+                    real-time queue tracking, family member bookings, EMR workflows,
+                    and five independent role dashboards.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {["React", "Node.js", "MongoDB", "Express"].map((tech, i) => (
+                    {[
+                      "React",
+                      "Node.js",
+                      "MongoDB",
+                      "Socket.IO",
+                      "JWT",
+                      "Google OAuth",
+                      "Cloudinary"
+                    ].map((tech, i) => (
                       <span key={i} className="text-xs px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400">
                         {tech}
                       </span>
                     ))}
                   </div>
+                  <div className="mt-6 grid grid-cols-2 gap-4 text-sm text-gray-300">
+                    <div>🏥 10+ Hospitals</div>
+                    <div>👨‍⚕️ 50+ Doctors</div>
+                    <div>👨‍👩‍👧 Family Profiles</div>
+                    <div>📱 QR Check-ins</div>
+                    <div>📊 5 Role Dashboards</div>
+                    <div>⚡ Real-time Queue</div>
+                  </div>
                   <div className="mt-8 flex gap-4">
-                    <a href="https://github.com/vikash-kumar-fullstack/desiDealz" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition">
+                    <a
+                    href="https://github.com/vikash-kumar-fullstack/smart-healthcare-access-system" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-lg border border-white/20 hover:bg-white/10 transition">
                       GitHub
                     </a>
-                    <a href="https://desidealz.onrender.com/product" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition">
+                    <a
+                    href="https://smart-healthcare-access-system.vercel.app" target="_blank" rel="noopener noreferrer" className="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition">
                       Live Demo
                     </a>
                   </div>

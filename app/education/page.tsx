@@ -14,10 +14,11 @@ export default function EducationPage() {
       institution: "National Institute of Technology Mizoram",
       degree: "B.Tech — Computer Science & Engineering",
       duration: "2023 – 2027",
-      score: "9.43",
+      score: "9.4",
       scoreLabel: "CGPA",
       color: "blue",
       logo: "/logos/nitm.png",
+      certificate: "/certificates/nitm.pdf",
       description: "Pursuing Bachelor of Technology with focus on software development, data structures, algorithms, and system design.",
       courses: ["Data Structures & Algorithms", "Database Management", "Operating Systems", "Computer Networks", "Web Development", "Software Engineering"]
     },
@@ -28,6 +29,7 @@ export default function EducationPage() {
       score: "90.2",
       scoreLabel: "Percentage",
       color: "purple",
+      certificate: "/certificates/class12.pdf",
       description: "Completed Higher Secondary education with Physics, Chemistry, and Mathematics as core subjects.",
       courses: ["Physics", "Chemistry", "Mathematics", "English", "Computer Science"]
     },
@@ -38,6 +40,7 @@ export default function EducationPage() {
       score: "90.2",
       scoreLabel: "Percentage",
       color: "green",
+      certificate: "/certificates/class10.pdf",
       description: "Completed secondary education with distinction in Mathematics and Science.",
       courses: ["Mathematics", "Science", "Social Studies", "English", "Hindi"]
     }
@@ -149,6 +152,12 @@ export default function EducationPage() {
                       ))}
                     </div>
                   </div>
+                  <button
+                  onClick={() => setOpenCert(edu.certificate)}
+                  className={`mt-6 text-sm text-${edu.color}-400 hover:underline`}
+                >
+                  View Certificate →
+                </button>
                 </div>
               </motion.div>
             ))}
